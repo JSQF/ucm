@@ -1,4 +1,4 @@
-package io.satl.ucm.domain;
+package io.saltcat.ucm.domain;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 

@@ -1,15 +1,17 @@
-package io.satl.ucm.domain.dao;
+package io.saltcat.ucm.domain;
+
+import java.util.Date;
 
 /**
- * Created by huawei on 3/19/16.
+ * Created by huawei on 4/3/16.
  */
-public class EnvironmentCondition {
+public class Role {
 
     private Integer id;
     private String name;
-    private boolean nameLike;
     private String code;
-    private boolean codeLike;
+    private Date createTime;
+    private Date updateTime;
 
     public Integer getId() {
         return id;
@@ -27,14 +29,6 @@ public class EnvironmentCondition {
         this.name = name;
     }
 
-    public boolean isNameLike() {
-        return nameLike;
-    }
-
-    public void setNameLike(boolean nameLike) {
-        this.nameLike = nameLike;
-    }
-
     public String getCode() {
         return code;
     }
@@ -43,11 +37,19 @@ public class EnvironmentCondition {
         this.code = code;
     }
 
-    public boolean isCodeLike() {
-        return codeLike;
+    public Date getCreateTime() {
+        return createTime;
     }
 
-    public void setCodeLike(boolean codeLike) {
-        this.codeLike = codeLike;
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
     }
 }

@@ -1,7 +1,5 @@
 package io.saltcat.ucm.client;
 
-import com.meidusa.venus.client.simple.SimpleServiceFactory;
-import io.saltcat.ucm.api.UcmApi;
 import io.saltcat.ucm.exception.UcmException;
 import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
@@ -71,6 +69,11 @@ public class UcmClient {
     }
 
     private void loadLocalProperties(){
+
+        Properties props = System.getProperties();
+
+        //System.setProperties(props);
+
         String localPropertyFileLocation = UcmContext.getContext().getClientInfo().getHome() + UcmClientConstants.SLASH + UcmContext.getContext().getUcmInfo().getProject() + ".properties";
         File localPropertyFile = new File(localPropertyFileLocation);
         if (!localPropertyFile.exists()) {

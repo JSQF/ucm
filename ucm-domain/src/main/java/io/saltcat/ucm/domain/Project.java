@@ -1,4 +1,4 @@
-package io.satl.ucm.domain;
+package io.saltcat.ucm.domain;
 
 import java.util.Date;
 

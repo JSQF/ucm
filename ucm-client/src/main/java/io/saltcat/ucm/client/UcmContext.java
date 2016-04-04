@@ -1,8 +1,5 @@
 package io.saltcat.ucm.client;
 
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Properties;
 
 /**
@@ -44,7 +41,9 @@ public final class UcmContext {
         if (properties == null) {
             return;
         }
-        System.setProperties(properties);
+        Properties sys = System.getProperties();
+        sys.putAll(properties);
+        System.setProperties(sys);
         this.properties.putAll(properties);
     }
 

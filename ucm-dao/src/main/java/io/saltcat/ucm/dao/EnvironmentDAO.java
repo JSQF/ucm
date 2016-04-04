@@ -1,6 +1,6 @@
 package io.saltcat.ucm.dao;
 
-import io.satl.ucm.domain.Environment;
+import io.saltcat.ucm.domain.Environment;
 
 import java.util.List;
 
